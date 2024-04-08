@@ -1,0 +1,109 @@
+.grid-container {
+    max-width: 1320px;
+    width: 100%;
+    height: 85vh;
+    margin:40px auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 2px;
+    grid-template-columns:1fr 0.5fr repeat(4,1fr) ;
+    grid-template-rows:repeat(4,auto);
+}
+
+.grid-item {
+    width: 100%;
+    background-color: #C9316B;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.grid-item:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:1 ;
+    grid-row-end: 3;
+    background-color: #CA319D;
+}
+
+.grid-item:nth-child(3){
+    background-color:#ED6E62;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start:1 ;
+    grid-row-end: 5;
+}
+
+.grid-item:nth-child(4){
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    background-color: #EFC437;
+}
+.grid-item:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    background-color: #538C45;
+}
+.grid-item:nth-child(6){
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    background-color: #267C87;
+}
+.grid-item:nth-child(7){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3 ;
+    grid-row-end: 4;
+    background-color: #779727;
+}
+
+.grid-item:nth-child(8){
+    grid-template-columns: 0.5fr;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end: 4;
+    background-color: #478755;
+}
+
+.grid-item:nth-child(9){
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end: 4;
+    background-color: #30C9C2;
+}
+
+.grid-item:nth-child(10){
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start:3;
+    grid-row-end: 4;
+    background-color: #31C98F;
+}
+.grid-item:nth-child(11){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:4;
+    grid-row-end: 5;
+    background-color: #544079;
+}
+.grid-item:nth-child(12){
+    grid-column-start:6;
+    grid-column-end:7;
+    grid-row-start:4;
+    grid-row-end: 5;
+    background-color: #DE212F;
+}
+
+.num{
+    margin-top: 50px;
+}

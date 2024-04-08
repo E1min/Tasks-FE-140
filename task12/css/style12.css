@@ -1,0 +1,100 @@
+
+.cards{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    
+}
+
+div{
+    display: block;
+}
+.qutu1{
+    width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color:#8E44AD;
+    border-radius: 10px;
+    margin:10px;
+    padding-left: 15px;
+}
+
+.qutu2{
+    width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color:#009432;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.qutu3{
+    width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color:#0652DC;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.qutu4{
+    width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color:#161617;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+#fotochip{
+    width: 50px;
+    padding-top: 35px;
+    margin-left: -5px;
+}
+#kod{
+    width: 300px;
+    margin: 0%;
+    padding-top: 1px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#ad{
+    margin: 0%;
+    padding-top:1px ;
+    color: white;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+#tarix{
+    margin: 0%;
+    padding-top: 15px;
+    color: white;
+    font-size: 10px;
+    display: inline;
+}
+#reqem{
+    margin: 0%;
+    color: white;
+    font-size: larger;
+    display:flex;
+}
+#fotovisa{
+    margin-right: 20px;
+    margin-top: -10;
+    width: 100px;
+    height: 50px;
+    font-size:10px;
+    
+}
+.tarixvisa{
+    display: flex;
+    justify-content: space-between;
+}

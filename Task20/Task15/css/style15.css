@@ -1,0 +1,121 @@
+.box{
+    width: 200px;
+    height: 300px;
+    margin-top: 100px;
+    border: 1px solid;
+    border-radius: 20px;
+    overflow: hidden; 
+    background-color: #96ff0d;
+    cursor: pointer;
+    position: relative;
+}
+
+img{
+    object-fit: cover;
+}
+
+.front,.back{
+    position: absolute;
+    transition:all 1s;
+}
+
+.front{
+    width: 100%;
+    height: 100%; 
+    z-index: 2;
+}
+
+.box:hover .front{
+    transform:translateY(-350px) scale(.3) ;
+}
+
+.back{
+    width:100%;
+    height:100%;
+    transform:translateY(300px);
+    z-index: 1;
+}
+
+.box:hover .back{
+    transform:translateY(0px) scale(1.1);
+}
+.card1{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position:absolute;
+    z-index: 4;
+    margin: 8px;
+    transition:all .1s;
+    animation-duration: 3s;
+    animation-name:card1animate ;
+    animation-iteration-count: infinite;
+}
+.card2{
+    width: 30px;
+    height: 30px;
+    background-color:yellow;
+    position: absolute;
+    z-index: 3;
+    margin: 8px;
+    transition:all .1s ;
+    animation-duration: 3s ;
+    animation-name:card2animate ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes card1animate {
+    0%{
+        transform:translate(0,0);
+    }
+
+    25%{
+        transform:translate(0,250px);
+        
+    }
+
+    50%{
+        transform:translate(150px,250px);
+        
+        
+    }
+    
+    75%{
+        transform:translate(150px,0) ;
+    
+        
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+
+@keyframes card2animate {
+    0%{
+        transform:translate(0,0);
+    }
+
+    25%{
+        transform:translate(150px,0);
+        border-radius: 10px;
+        
+    }
+
+    50%{
+        transform:translate(150px,250px);
+        border-radius: 10px;
+        }
+    
+    75%{
+        transform:translate(0,250px) ;
+        border-radius: 10px;
+        }
+
+    100%{
+        transform:translate(0,0);
+        border-radius: 10px;
+    }
+}
+

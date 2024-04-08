@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 400px;
+    height: 460px;
+    text-align: center;
+    background:linear-gradient(to right, rgba(0, 128, 96, 0.712),rgba(176, 187, 16, 0.685));
+    padding: 5px 0;
+    overflow-y: scroll;
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(140, 47, 226)
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 5px 50px;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.719);
+    transition: 5s ease;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+    background-color: rgb(190, 134, 241);
+    color: rgb(15, 15, 15);
+}
+
+
+
+h6{
+    position: relative;
+    left:-50px;
+    color: red;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.mode{
+    width: 100%;
+}
+
+.mode button{
+    position: relative;
+    right: -150px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.darkmode{
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+
+    & form button {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(248, 243, 243, 0.575);
+        background-color: rgb(25, 15, 34);
+        color: rgb(241, 238, 238);
+    }
+
+    & .container {
+        text-align: center;
+        background:linear-gradient(to right, rgba(108, 109, 109, 0.712),rgb(3, 24, 41));
+           
+    }
+}

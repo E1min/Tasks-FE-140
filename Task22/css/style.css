@@ -1,0 +1,58 @@
+@import url(./reset.scss);
+body {
+  margin-left: 124px;
+  margin-top: 91px;
+  margin-right: 150px;
+  margin-bottom: 173px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+h1 {
+  color: #000;
+  font-family: "Roboto Slab";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 101.385%;
+  width: 365px;
+  height: 93px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.img1 {
+  width: 366px;
+  height: 344px;
+  margin-left: 190px;
+}
+
+.img2 {
+  width: 232px;
+  height: 203px;
+  margin-right: 132px;
+}
+
+.text {
+  width: 662px;
+  height: 374px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.row {
+  margin-bottom: 94px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182, 183, 184);
+    display: flex;
+    justify-content: center;
+     font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px 20px 90px 20px;
+    margin-top: 50px;
+    padding:0 20px;
+}
+
+.inputs{
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.inputs::after{
+    content: "";
+    width: 116%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.733);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.inputs button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    top:80px;
+    left: 90px;
+}
+
+.inputs button i{
+    font-size: 48px;
+}
+
+form{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: grey;
+}
+
+h1{
+    color: blueviolet;
+    display: flex;
+    width: 50px;
+}
+p{
+    display: block;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+}
+
+input{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.error{
+    color: red;
+    border: 1px solid red;
+}
+
+.display{
+    display: block;
+
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 5px;
+    gap: 8px;
+}
