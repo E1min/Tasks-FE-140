@@ -20,6 +20,7 @@ body{
     width: 200px;
     height: 250px;
     background-color: white;
+    border-radius: 5px;
 }
 
 .image{
@@ -60,4 +61,23 @@ body{
     display: flex;
     align-items: center;
     gap: 3px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    .card{
+        width: 150px;
+        height: 220px;
+        border-radius: 5px;
+        background-color: white;
+        overflow: hidden;
+    }
 }
