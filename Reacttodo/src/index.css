@@ -1,0 +1,54 @@
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+fieldset{
+  border-radius: 10px;
+}
+
+form{
+  width:350px;
+}
+
+form input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 4px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.849);
+  border-radius: 5px;
+}
+
+.todos{
+  width: 350px;
+  height: 400px;
+  overflow: scroll; 
+}
+
+.todo{
+  width: auto;
+  height: 50px;
+  align-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.849);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+h4{
+  height: 20px;
+  margin: 0;
+}
+
+p{
+  height: 20px;
+  margin: 0;
+}
