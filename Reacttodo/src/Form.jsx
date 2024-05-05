@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function Form() {
     const [form, setForm] = useState({
+        id:1,
         tittle: "",
         desc: ""
     });
@@ -10,15 +11,22 @@ function Form() {
 
     function sendTodo(e) {
         e.preventDefault()
-        setTodos([...todos, form])
-
+        document.getElementById("tittleInput").value = "";
+        document.getElementById("descInput").value = "";
+        setTodos([...todos, form]);
+        setForm({
+            id:1,
+            tittle:"",
+            desc:""
+        })
     }
-    console.log(todos);
+    
     return (
         <div className='main'>
             <form onSubmit={sendTodo}>
                 <fieldset><legend>Add Todo</legend>
                     <input
+                        id='tittleInput'
                         type="text"
                         onChange={(e) => setForm({
                             ...form,
@@ -26,6 +34,7 @@ function Form() {
                         })}
                         placeholder='Tittle' />
                     <input
+                        id='descInput'
                         type="text"
                         onChange={(e) => setForm({
                             ...form,
@@ -40,7 +49,7 @@ function Form() {
                 {
                     todos.map(todo => {
                         return (
-                            <div className='todo'>
+                            <div className='todo' key={todo.id+=1} >
                                 <h4>{todo.tittle}</h4>
                                 <p>{todo.desc}</p>
                             </div>
