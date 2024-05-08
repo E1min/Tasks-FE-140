@@ -46,9 +46,11 @@ form input{
 h4{
   height: 20px;
   margin: 0;
+  cursor: pointer;
 }
 
 p{
   height: 20px;
   margin: 0;
+  cursor: pointer;
 }

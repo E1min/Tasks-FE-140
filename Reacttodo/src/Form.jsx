@@ -1,13 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Form() {
     const [form, setForm] = useState({
-        id:1,
         tittle: "",
         desc: ""
     });
 
+    
     const [todos, setTodos] = useState([])
+    
+    const [isVisible, setIsvisible] = useState(false)
+
+
+function clicked() {
+         setIsvisible(!isVisible)
+        }
+    
 
     function sendTodo(e) {
         e.preventDefault()
@@ -15,12 +23,11 @@ function Form() {
         document.getElementById("descInput").value = "";
         setTodos([...todos, form]);
         setForm({
-            id:1,
-            tittle:"",
-            desc:""
+            tittle: "",
+            desc: ""
         })
     }
-    
+
     return (
         <div className='main'>
             <form onSubmit={sendTodo}>
@@ -47,11 +54,11 @@ function Form() {
             </form>
             <div className='todos'>
                 {
-                    todos.map(todo => {
+                    todos.map((todo, index) => {
                         return (
-                            <div className='todo' key={todo.id+=1} >
-                                <h4>{todo.tittle}</h4>
-                                <p>{todo.desc}</p>
+                            <div className='todo' key={index} onClick={clicked}>
+                                <h4 >{todo.tittle}</h4>
+                                {isVisible ? <p >{todo.desc}</p> : null}
                             </div>
                         )
                     })
